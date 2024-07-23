@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image slider</title>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="slider">
+      <div class="slides" id="origin">
+        <div class="slide">
+          <img src="images/img-1.jpg" class="user-image" />
+          <h2 class="user-name">Richard Hendricks</h2>
+          <p class="user-profession">Lead Programmer</p>
+          <button class="message-button">Message</button>
+        </div>
+        <div class="slide">
+          <img src="images/img-2.jpg" class="user-image" />
+          <h2 class="user-name">Bertram Gilfoyle</h2>
+          <p class="user-profession">Systems Architect</p>
+          <button class="message-button">Message</button>
+        </div>
+        <div class="slide">
+          <img src="images/img-3.jpg" class="user-image" />
+          <h2 class="user-name">Dinesh Chugtai</h2>
+          <p class="user-profession">Backend Developer</p>
+          <button class="message-button">Message</button>
+        </div>
+        <div class="slide">
+          <img src="images/img-4.jpg" class="user-image" />
+          <h2 class="user-name">Erlich Bachman</h2>
+          <p class="user-profession">Startup Investor</p>
+          <button class="message-button">Message</button>
+        </div>
+        <div class="slide">
+          <img src="images/img-5.jpg" class="user-image" />
+          <h2 class="user-name">Jared Dunn</h2>
+          <p class="user-profession">Business Manager</p>
+          <button class="message-button">Message</button>
+        </div>
+        <div class="slide">
+          <img src="images/img-6.jpg" class="user-image" />
+          <h2 class="user-name">Monica Hall</h2>
+          <p class="user-profession">Venture Capitalist</p>
+          <button class="message-button">Message</button>
+        </div>
+      </div>
+      <div class="button">
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+
+      <div class="navigation">
+        <div class="counter">
+          <div class="count" id="firstCount">1</div>
+        </div>
+        <div class="text">from</div>
+        <div class="counter">
+          <div class="count" id="secondCount"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

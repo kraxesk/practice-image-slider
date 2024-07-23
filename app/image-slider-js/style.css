@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background: url('images/bg.jpg') #030728 no-repeat center;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 800px;
+  height: 508px;
+  overflow: hidden;
+
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  backdrop-filter: blur(30px);
+}
+
+.slides {
+  height: 100%;
+  display: flex;
+  transform: translateX(0);
+}
+
+.slide {
+  width: 800px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  border: 3px solid #fff;
+  padding: 4px;
+}
+
+.user-profession {
+  font-size: 1.15rem;
+  color: #e3e3e3;
+  font-weight: 500;
+  margin: 14px 0 40px;
+}
+
+.message-button {
+  font-size: 1.25rem;
+  padding: 10px 35px;
+  color: #030728;
+  border-radius: 6px;
+  font-weight: 500px;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+.message-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.button {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  padding: 8px;
+}
+
+.button .prev,
+.button .next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.6);
+  color: #030728;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  transition: 0.3s, color 0.3s;
+}
+
+.button .prev:hover,
+.button .next:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation .counter {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin: 0 10px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.navigation .counter .count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #030728;
+}
+.text {
+  color: #fff;
+  margin: 0 8px;
+  font-size: 20px;
+}
+
+/* для мобильной версии
+
+@media (max-width: 768px) {
+  .slider {
+    width: 700px;
+    height: auto;
+  }
+
+  .slide {
+    width: 700px;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .user-image {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  .user-profession {
+    font-size: 1rem;
+    margin: 10px 0 20px;
+  }
+
+  .message-button {
+    font-size: 1rem;
+    padding: 10px 30px;
+    height: 32px;
+  }
+
+  .button .prev,
+  .button .next {
+    width: 34px;
+    height: 34px;
+  }
+
+  .navigation {
+    bottom: 6px;
+  }
+
+  .navigation .counter {
+    width: 6px;
+    height: 6px;
+    margin: 0 5px;
+  }
+
+  .text {
+    font-size: 8px;
+    margin: 0 5px;
+  }
+} */
